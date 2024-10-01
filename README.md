@@ -1,4 +1,5 @@
 Setup:
+
 Download this project.
 Open chrome browser.
 Click "Extensions" top-right side of the browser.
