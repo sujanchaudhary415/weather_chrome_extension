@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("/images/bg-sunny.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; 
+}
+
+.app_wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 450px;
+  min-width: 350px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.8)
+  );
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+header input {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: #ffffff;
+  border: 2px solid #7b8cc2; 
+  font-size: 22px;
+  font-weight: 400;
+  transition: background 0.3s ease, transform 0.2s ease, border 0.2s ease;
+}
+
+header input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+  border: 2px solid #00a2ff; 
+}
+
+main {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.location .city {
+  color: #ffcc00; 
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.location .date {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.current .temp {
+  color: #ffcc00; 
+  font-size: 100px; 
+  font-weight: 900;
+  margin: 20px 0;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp span {
+  font-weight: 500;
+  font-size: 48px; }
+
+.current .weather {
+  color: #ffffff; 
+  font-size: 36px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.current .hi-low {
+  color: #ffa500; 
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Add responsive design for smaller screens */
+@media (max-width: 400px) {
+  header input {
+    max-width: 80%;
+    font-size: 18px;
+  }
+
+  .location .city {
+    font-size: 28px;
+  }
+
+  .current .temp {
+    font-size: 70px;
+  }
+
+  .current .weather {
+    font-size: 28px;
+  }
+
+  .current .hi-low {
+    font-size: 20px;
+  }
+}
